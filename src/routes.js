@@ -9,11 +9,11 @@ export const Rout = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route exact path="/Home" component={Home} />
+        <Route exact path="/Home" element={ <Home />} />
         <Route exact path="/">
          <Route path="*" element={<Navigate to ="/" />}/>
         </Route>
-        <Route exact path="/About" component={About} />
+        <Route exact path="/About" element={ <About />} />
       </Routes>
     </div>
   );
